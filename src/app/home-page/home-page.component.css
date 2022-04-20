@@ -19,12 +19,17 @@
     margin-top: 5px;
     margin-left: 200px;
 }
-.image{
-    margin-left: 500px;  
-}
+
 .heading{
     color: white;
     margin-left: 450px; 
+}
+img{
+    margin-right: 350px;
+}
+.para{
+    color: white;
+    text-align: center;
 }
 p {
     color: black;
