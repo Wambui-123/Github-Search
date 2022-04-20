@@ -30,10 +30,9 @@
     </div>
 </div>
 
-
 <div class="repos">
 <h3>Repositotories</h3>
-    <ol style="background-color: #fff; display: flex; flex-direction: column;">
+    <ol>
       <li *ngFor="let repo of repos">
         <a [href]="repo?.html_url" target="_blank" >{{repo.full_name }}</a>
       </li>

@@ -69,8 +69,10 @@ button {
 }
 .wrapper {
     background-color: #fff;
-    justify-content: space-evenly;
     border-radius: 8px;
-    height: 28rem;
+}
+.repos{
+    height: 25rem;
     overflow-y: scroll;
+align-items: flex-end;
 }
