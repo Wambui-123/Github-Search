@@ -23,6 +23,7 @@
 .heading{
     color: white;
     margin-left: 450px; 
+    
 }
 .image{
     margin-right: 350px;
@@ -84,6 +85,6 @@ button {
 }
 .subheading{
     font-style: oblique;
-    font-family: Orelega One;
     color: black;
+    text-decoration: underline;
 }
