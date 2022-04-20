@@ -1,0 +1,38 @@
+<div class="mx-4 d-flex justify-content-between align-items-center">
+  <h1 style="color: white;">GITHUB-SEARCH</h1>
+ <p style="color: white;" class="text-center">Search for your username or git repos here!</p>
+</div>
+<!-- <img src="https://desktop.github.com/images/desktop-icon.svg" alt="">
+<p style="color: white;">Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, 
+   GitHub Desktop simplifies your development workflow.</p> -->
+
+<form action="" id="form" [formGroup]="rForm">
+    <div class="input-group mb-4" style="padding-top: 45px;">
+        <input type="text" class="form-control" class="col-xs-4" placeholder="Search by Username" aria-label="Username" aria-describedby="basic-addon1" formControlName="username">
+        <button class="btn btn-primary" type="button" (click)="onSubmit()" >Submit</button>
+      </div>
+</form>
+<div class="wrapper container" style="display: flex;" *ngIf="profile">
+<div style="display: flex;" >
+    <div class="profile-container">
+        <div style="height: 12rem; width: 12rem; border-radius: 50%; margin: 1rem;">
+          <img [src]="profile?.avatar_url" alt="">
+        </div>
+           <div class="other-details"> 
+            <p>{{profile && profile.name}}</p>
+            <p>{{profile?.login}}</p>
+            <p>{{profile?.bio}}</p>
+            <p>{{profile?.company}}</p>
+            <p>{{profile?.created_at | date : 'short'}}</p>
+           </div>
+    </div>
+</div>
+<div class="repos">
+    <ol style="background-color: #fff; display: flex; flex-direction: column;">
+      <li *ngFor="let repo of repos">
+        <a [href]="repo?.html_url" target="_blank" >{{repo.full_name }}</a>
+      </li>
+    </ol>
+</div>
+</div>
+
