@@ -7,7 +7,7 @@ Github-Search is an app that simply offers you the ability to search for your Gi
 Languages used are: Html, Css, Typescript, Javascript, Bootstrap and Angular
 
 #  Link to live server
-https://6254aeded11dd73b5d17890e--magical-fudge-746da0.netlify.app/
+https://wambui-123.github.io/Github-Search/
 
 ## Development server
 
