@@ -1,8 +1,13 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # GitSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+
+#  Description 
+Github-Search is an app that simply offers you the ability to search for your Git Username or Repos at ease.
+Languages used are: Html, Css, Typescript, Javascript, Bootstrap and Angular
+
+#  Link to live server
+https://6254aeded11dd73b5d17890e--magical-fudge-746da0.netlify.app/
 
 ## Development server
 
@@ -27,9 +32,3 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-=======
-# Github-Search
->>>>>>> 02d3d43ac90b5f9a1abeca6b3c521aac47953177
-=======
-# Github-Search
->>>>>>> 0979236f3621439d25919ab1ba6c8896495e11f3
