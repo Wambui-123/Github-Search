@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # GitSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
@@ -29,3 +30,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 =======
 # Github-Search
 >>>>>>> 02d3d43ac90b5f9a1abeca6b3c521aac47953177
+=======
+# Github-Search
+>>>>>>> 0979236f3621439d25919ab1ba6c8896495e11f3
