@@ -19,9 +19,12 @@
     margin-top: 5px;
     margin-left: 200px;
 }
-img {
-    height: 12rem;
-    width: 12rem;
+.image{
+    margin-left: 500px;  
+}
+.heading{
+    color: white;
+    margin-left: 500px;  
 }
 p {
     color: black;
