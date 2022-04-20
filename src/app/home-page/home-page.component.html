@@ -10,7 +10,7 @@
 <form action="" id="form" [formGroup]="rForm">
     <div class="input-group mb-4" style="padding-top: 45px;">
         <input type="text" class="form-control" class="col-xs-4" placeholder="Search by Username" aria-label="Username" aria-describedby="basic-addon1" formControlName="username">
-        <button class="btn btn-primary" type="button" (click)="onSubmit()" >Submit</button>
+        <button type="button" (click)="onSubmit()" class="button">Submit</button>
       </div>
 </form>
 <div class="wrapper container" style="display: flex;" *ngIf="profile">

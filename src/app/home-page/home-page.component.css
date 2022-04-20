@@ -31,6 +31,9 @@ img{
     color: white;
     text-align: center;
 }
+.button{
+    background-color: #6f42c1;
+}
 p {
     color: black;
 }
