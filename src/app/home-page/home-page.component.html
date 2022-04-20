@@ -16,19 +16,23 @@
 <div class="wrapper container" style="display: flex;" *ngIf="profile">
 <div style="display: flex;" >
     <div class="profile-container">
+      <h3>User</h3>
         <div>
           <img [src]="profile?.avatar_url" alt="" style="width: 100px;">
         </div>
            <div class="other-details"> 
             <p>Name : <strong>{{profile?.name}}</strong></p>
             <p> Username: <strong>{{profile?.login}}</strong></p>
-            <p>Personal Bio: <strong>{{profile?.bio}}</strong></p>
             <p >Date Joined: <strong>{{profile.created_at|date}}</strong></p>
             <p>Last Update: <strong>{{profile.updated_at|date}}</strong></p>
+            <p class="stat">Number of Repos: <strong>{{profile.public_repos}}</strong></p>
            </div>
     </div>
 </div>
+
+
 <div class="repos">
+<h3>Repositotories</h3>
     <ol style="background-color: #fff; display: flex; flex-direction: column;">
       <li *ngFor="let repo of repos">
         <a [href]="repo?.html_url" target="_blank" >{{repo.full_name }}</a>
