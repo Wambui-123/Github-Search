@@ -6,7 +6,6 @@
   GitHub Desktop simplifies your development workflow.</p>
 <p class="para">Search for your username or git repos here!</p>
 
-
 <form action="" id="form" [formGroup]="rForm">
     <div class="input-group mb-4" style="padding-top: 45px;">
         <input type="text" class="form-control" class="col-xs-4" placeholder="Search by Username" aria-label="Username" aria-describedby="basic-addon1" formControlName="username">
@@ -16,22 +15,22 @@
 <div class="wrapper container" style="display: flex;" *ngIf="profile">
 <div style="display: flex;" >
     <div class="profile-container">
-      <h3>User</h3>
+      <h2 class="subheading">User</h2>
         <div>
           <img [src]="profile?.avatar_url" alt="" style="width: 100px;">
         </div>
            <div class="other-details"> 
-            <p>Name : <strong>{{profile?.name}}</strong></p>
-            <p> Username: <strong>{{profile?.login}}</strong></p>
-            <p >Date Joined: <strong>{{profile.created_at|date}}</strong></p>
-            <p>Last Update: <strong>{{profile.updated_at|date}}</strong></p>
-            <p class="stat">Number of Repos: <strong>{{profile.public_repos}}</strong></p>
+            <p><strong>Name :</strong> {{profile?.name}}</p>
+            <p><strong>Username:</strong> {{profile?.login}}</p>
+            <p><strong>Joined:</strong> {{profile.created_at|date}}</p>
+            <p><strong>Update:</strong> {{profile.updated_at|date}}</p>
+            <p> <strong>Number of Repos: </strong> {{profile.public_repos}}</p>
            </div>
     </div>
 </div>
 
 <div class="repos">
-<h3>Repositotories</h3>
+<h2 class="subheading">Repositotories</h2>
     <ol>
       <li *ngFor="let repo of repos">
         <a [href]="repo?.html_url" target="_blank" >{{repo.full_name }}</a>
